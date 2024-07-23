@@ -27,6 +27,7 @@
         <module>langchain4j-redis-spring-boot-starter</module>
         <module>langchain4j-qianfan-spring-boot-starter</module>
         <module>langchain4j-milvus-spring-boot-starter</module>
+        <module>langchain4j-chroma-spring-boot-starter</module>
     </modules>
 
     <properties>
@@ -34,7 +35,8 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <tinylog.version>2.6.2</tinylog.version>
-        <spring.boot.version>3.2.6</spring.boot.version>
+<!--        <spring.boot.version>3.2.6</spring.boot.version>-->
+        <spring.boot.version>3.2.3</spring.boot.version>
         <testcontainers.version>1.19.8</testcontainers.version>
         <tinylog.version>2.6.2</tinylog.version>
     </properties>
@@ -141,7 +143,8 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.6.3</version>
+<!--                <version>3.6.3</version>-->
+                <version>3.5.0</version>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
