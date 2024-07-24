@@ -17,7 +17,7 @@ import static dev.langchain4j.store.embedding.chroma.spring.ChromaEmbeddingStore
 /**
  * ChromaEmbeddingStoreAutoConfiguration
  *
- * @author huleilei9
+ * @author hill
  * @date 2024/07/23
  */
 @AutoConfiguration
@@ -27,7 +27,7 @@ public class ChromaEmbeddingStoreAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean
-    public ChromaEmbeddingStore milvusEmbeddingStore(ChromaEmbeddingStoreProperties properties,
+    public ChromaEmbeddingStore chromaEmbeddingStore(ChromaEmbeddingStoreProperties properties,
                                                      @Nullable EmbeddingModel embeddingModel) {
         String url = Optional.ofNullable(properties.getUrl()).orElse(DEFAULT_URL);
         String collectionName = Optional.ofNullable(properties.getCollectionName()).orElse(DEFAULT_COLLECTION_NAME);

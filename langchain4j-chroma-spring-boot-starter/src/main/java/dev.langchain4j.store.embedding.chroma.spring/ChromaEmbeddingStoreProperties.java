@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * ChromaEmbeddingStoreProperties
  *
- * @author huleilei9
+ * @author hill
  * @date 2024/07/23
  */
 @Getter
@@ -16,7 +16,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class ChromaEmbeddingStoreProperties {
 
     static final String PREFIX = "langchain4j.chroma";
-    static final String DEFAULT_URL = "localhost:8000";
+    static final String DEFAULT_URL = "http://localhost:8000";
     static final String DEFAULT_COLLECTION_NAME = "langchain4j_collection";
     static final Long DEFAULT_TIMEOUT = 5000L;
 
